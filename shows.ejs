@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project using Mongodb and Nodejs</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <style>
+     .haritha{
+         padding: 100px;
+     }
+     body{
+         background-color: rgb(126, 66, 108);
+         
+     }
+     h5{
+         color: rgb(85, 18, 7);
+     }
+
+       </style>
+  </head>
+        <div class="container">
+            <div class="haritha">
+                    <h2><u>Infos</u></h2>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"><h5>First Name</h5></th>
+                                    <th scope="col"><h5>Last Name</h5></th>
+                                    <th scope="col"><h5>Address</h5></th>
+                                    <th scope="col"><h5>Email</h5></th>
+                                    <th scope="col"><h5>Phone Number</h5></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                <%result.forEach(function(result) { %>
+                                    <tr>
+                                    <td><b><%= result.fname %></b></td>
+                                    <td><b><%= result.lname %></b></td>
+                                    <td><b><%= result.address %></b></td>
+                                    <td><b><%= result.email %></b></td>
+                                    <td><b><%= result.phone %></b></td>
+                                </tr>
+                                    <% }); %>
+                                </tbody>
+                              </table>
+                            <center>  <a href="/" class="btn btn-primary">Back To Home</a> </center>
+          </div>
+          </div>
+          <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+          <script src=".js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+          <script src="js/feather.min.js"></script>
+          <script>
+            feather.replace()
+          </script>
+    </body>
+</html>
